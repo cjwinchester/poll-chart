@@ -1,7 +1,7 @@
-Poll, with chart
+Poll
 ==========
 
-A basic poll widget with pie chart. <a href="http://www.codywinchester.com/poll/" target="_blank">Demo</a>.
+A basic poll widget built with Google products. <a href="http://www.codywinchester.com/poll/" target="_blank">Demo</a>.
 
 Uses:
 <ul>
