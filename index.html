@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+
+<head>
+
+<title>
+Who's your favorite Beatle?
+</title>
+
+<link rel="stylesheet" href="poll.css" />
+<script src="poll.js"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+<h2>Vote: Who's your favorite Beatle?</h2>
+
+<div id="forms" style="float:left;">
+
+<!-- redirect Google form input to reload the page -->
+<script type="text/javascript">var submitted=false;</script>
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {setTimeout('parent.location.reload()',5000); return true;}"></iframe>
+
+
+<!-- inputs from Google form -->
+<form action="https://docs.google.com/forms/d/1PjG83pa3ZEA_M89h5Ci1HGz6i4byoV_-_wCRUmTLsCU/formResponse" method="POST" target="hidden_iframe" onsubmit="setTimeout('parent.location.reload()',1500); return true;">
+
+<ul>
+<li>
+<input type="radio" name="entry.244354745" value="John" id="john" style="vertical-align:-13%"><label for="john">John (<span id="johncount"></span>)</label>
+</li>
+<li><input type="radio" name="entry.244354745" value="Paul" id="paul" style="vertical-align:-13%"><label for="paul">Paul (<span id="paulcount"></span>)</label>
+</li>
+<li><input type="radio" name="entry.244354745" value="George" id="george" style="vertical-align:-13%"><label for="george">George (<span id="georgecount"></span>)</label>
+</li>
+<li class="ss-choice-item"><input type="radio" name="entry.244354745" value="Ringo" id="ringo" class="ss-q-radio" aria-label="Ringo" style="vertical-align:-13%"><label for="ringo">Ringo (<span id="ringocount"></span>)</label>
+</li>
+</ul>
+
+<input type="submit" name="submit" value="Submit &raquo;" style="margin-top:10px;">
+
+</form>
+</div>
+
+<div id="chartwrapper" style="float:right; margin-top:-40px;">
+<div id="chartdiv"></div>
+</div>
+
+</div>
+
+<!-- Your spreadsheet key would go here -->
+<script src="http://spreadsheets.google.com/feeds/list/0Ag4MM37uq7FmdGFoTG9zckkwb05Pd2FUOFRmZ3NBM2c/od6/public/values?alt=json-in-script&amp;callback=displayContent" type="text/javascript"></script>
+</body>
+
+</html>
